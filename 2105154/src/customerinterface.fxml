@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="702.0" prefWidth="1217.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customermaincontroller">
+   <children>
+      <ImageView fx:id="profileimage" fitHeight="64.0" fitWidth="35.0" layoutX="741.0" layoutY="38.0" onMouseClicked="#profileimageclicked" onMouseEntered="#profileimageentered" onMouseExited="#profileimageexited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@20.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logoutimage" fitHeight="64.0" fitWidth="35.0" layoutX="33.0" layoutY="21.0" onMouseClicked="#logoutimageclicked" onMouseEntered="#logoutimageentered" onMouseExited="#logoutimageexited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logout.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="logouttext" layoutX="32.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log Out" visible="false">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="profiletext" layoutX="741.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile" visible="false" wrappingWidth="47.47412109375">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="11.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="searchboxpane" layoutX="14.0" layoutY="87.0" prefHeight="592.0" prefWidth="264.0">
+         <children>
+            <ChoiceBox fx:id="searchchoicebox" layoutX="113.0" layoutY="23.0" prefWidth="150.0" />
+            <Label layoutX="12.0" layoutY="256.0" text="Search Food">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutY="27.0" text="Search Restaurant">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="searchfoodchoicebox" layoutX="113.0" layoutY="253.0" prefWidth="150.0" />
+            <Label layoutX="3.0" layoutY="441.0" text="Visit Restaurant">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="allrestaurantschoicebox" layoutX="113.0" layoutY="437.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="restaurantviewpane" layoutX="363.0" layoutY="87.0" prefHeight="278.0" prefWidth="608.0">
+         <children>
+            <TableView fx:id="tableview" layoutX="-22.0" layoutY="41.0" prefHeight="190.0" prefWidth="608.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+                  <TableColumn fx:id="score" prefWidth="75.0" text="score,score" />
+                  <TableColumn fx:id="zipcode" prefWidth="75.0" text="Zipcode" />
+                  <TableColumn fx:id="price" prefWidth="75.0" text="Price" />
+                  <TableColumn fx:id="category1" prefWidth="75.0" text="Category1" />
+                  <TableColumn fx:id="category2" prefWidth="75.0" text="Category2" />
+                  <TableColumn fx:id="category3" prefWidth="75.0" text="Category3" />
+              </columns>
+            </TableView>
+            <TextField fx:id="restaurantnamefield" layoutY="3.0" promptText="Name" style="-fx-background-color: lightblue;">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="applybutton" layoutX="230.0" layoutY="3.0" mnemonicParsing="false" onAction="#applybuttonpressed" style="-fx-background-color: orange;" text="Apply">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="restaurantscorefield" layoutY="4.0" promptText="Score" style="-fx-background-color: Lightblue;">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="restaurantcategoryfield" layoutX="-11.0" layoutY="4.0" promptText="Category" style="-fx-background-color: lightblue;">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="restaurantpricefield" layoutX="-11.0" layoutY="4.0" promptText="Price" style="-fx-background-color: lightblue;">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="restaurantzipcodefield" layoutX="-11.0" layoutY="2.0" promptText="Zipcode" style="-fx-background-color: lightblue;">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="14.0" />
+               </font>
+            </TextField>
+         </children></AnchorPane>
+      <ImageView fx:id="nothingfoundalert" fitHeight="226.0" fitWidth="209.0" layoutX="504.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@100.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="nothingfound" fill="#c12727" layoutX="554.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nothing found">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <GridPane fx:id="categorywisepane" layoutX="446.0" layoutY="279.0" prefHeight="278.0" prefWidth="487.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <TableView fx:id="foodtableview" layoutX="439.0" layoutY="239.0" prefHeight="404.0" prefWidth="478.0">
+        <columns>
+          <TableColumn fx:id="restaurantid" prefWidth="84.79998779296875" text="Res. Id" />
+            <TableColumn fx:id="foodcategory" prefWidth="164.79998779296875" text="Category" />
+            <TableColumn fx:id="foodname" prefWidth="150.39990234375" text="Name" />
+            <TableColumn fx:id="foodprice" prefWidth="70.4000244140625" text="price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="foodnamefield" layoutX="419.0" layoutY="87.0" promptText="Food Name">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="foodresnamefield" layoutX="419.0" layoutY="127.0" promptText="Res Name">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="foodcategoryfield" layoutX="430.0" layoutY="91.0" prefHeight="28.0" prefWidth="150.0" promptText="Food Category">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="foodpricefield" layoutX="429.0" layoutY="92.0" promptText="Price,price">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="13.0" />
+         </font>
+      </TextField>
+      <GridPane fx:id="totalfoodspane" layoutX="462.0" layoutY="322.0" prefHeight="294.0" prefWidth="433.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <TableView fx:id="customtableview" layoutX="407.0" layoutY="154.0" prefHeight="398.0" prefWidth="506.0">
+        <columns>
+          <TableColumn fx:id="customfoodname" prefWidth="120.0" text="Food Name" />
+          <TableColumn fx:id="customfoodprice" prefWidth="115.20001220703125" text="price" />
+            <TableColumn fx:id="customfoodcategory" prefWidth="152.79998779296875" text="Category" />
+            <TableColumn fx:id="customedbutton" prefWidth="117.5999755859375" text="Status" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="cartimage" fitHeight="52.0" fitWidth="38.0" layoutX="463.0" layoutY="557.0" onMouseClicked="#cartselected" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cart.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="cart" layoutX="430.0" layoutY="222.0" prefHeight="314.0" prefWidth="326.0">
+        <columns>
+          <TableColumn fx:id="orderuserid" prefWidth="75.0" text="User Id" />
+          <TableColumn fx:id="orderrestaurantid" prefWidth="81.60003662109375" text="Restaurant id" />
+            <TableColumn fx:id="orderfoodname" prefWidth="167.20001220703125" text="Food Name" />
+        </columns>
+      </TableView>
+      <Button fx:id="confirmcart" layoutX="593.0" layoutY="564.0" mnemonicParsing="false" onAction="#confirmcartpressed" prefHeight="27.0" prefWidth="125.0" text="Confirm order">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="lastone" layoutX="164.0" layoutY="38.0" prefHeight="26.0" prefWidth="150.0">
+         <children>
+            <Text fx:id="beeptxt" layoutX="64.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="khAikhAi.com">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+        
+   </children>
+</AnchorPane>

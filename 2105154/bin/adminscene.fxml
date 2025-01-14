@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginidpass" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="790.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admincontroller">
+   <children>
+      <Label layoutX="300.0" layoutY="306.0" prefHeight="35.0" prefWidth="124.0" text="Enter Id:">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="302.0" layoutY="354.0" prefHeight="43.0" prefWidth="144.0" text="Enter Pass:" translateY="20.0">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitbutton" layoutX="297.0" layoutY="458.0" minWidth="50.0" mnemonicParsing="false" onAction="#submitbuttonpressed" prefHeight="30.0" prefWidth="134.0" text="Submit" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="gobackbutton2" layoutX="30.0" layoutY="33.0" mnemonicParsing="false" onAction="#gobackbutton2pressed" style="-fx-background-color: lightgreen;" text="Go back" textAlignment="CENTER" textFill="#4fa87e">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="alerttext" layoutX="163.0" layoutY="525.0" prefHeight="30.0" prefWidth="435.0">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginid" layoutX="432.0" layoutY="311.0" opacity="0.3" prefHeight="23.0" prefWidth="258.0" style="-fx-background-color: orange;">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="loginpass" layoutX="454.0" layoutY="381.0" opacity="0.3" prefHeight="23.0" prefWidth="258.0" style="-fx-background-color: orange;">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="17.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="271.0" fitWidth="486.0" layoutX="156.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@6.png" />
+         </image>
+      </ImageView>
+      <Text fill="#4a8085" layoutX="638.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KhAiKhAi.com">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

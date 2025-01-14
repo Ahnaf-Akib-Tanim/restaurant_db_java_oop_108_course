@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="828.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customermaincontroller">
+   <children>
+      <Text fill="#84c27a" layoutX="662.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KhAikhAi.com">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="90.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="98.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age:">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="74.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fav Food:">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="80.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fav Res:">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="97.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id:">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="87.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pass:">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="261.0" layoutX="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@7.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signupsubmitbutton" layoutX="378.0" layoutY="530.0" mnemonicParsing="false" onAction="#signupsubmitbuttonpressed" style="-fx-background-color: lightgreen;" text="Submit">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="signupname" layoutX="179.0" layoutY="182.0" prefHeight="26.0" prefWidth="604.0" promptText="AAAAAA( Max 15 Char)" style="-fx-background-color: lightblue;">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="signupage" layoutX="179.0" layoutY="234.0" prefHeight="26.0" prefWidth="604.0" promptText="30" style="-fx-background-color: lightblue;">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="signupfavfood" layoutX="179.0" layoutY="290.0" prefHeight="26.0" prefWidth="604.0" promptText="Kacchi" style="-fx-background-color: lightblue;">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="signupfavres" layoutX="179.0" layoutY="345.0" prefHeight="26.0" prefWidth="604.0" promptText="Sultans Dine" style="-fx-background-color: lightblue;">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="signupid" layoutX="179.0" layoutY="402.0" prefHeight="26.0" prefWidth="604.0" promptText="\@gmail.com" style="-fx-background-color: lightblue;">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="signuppass" layoutX="179.0" layoutY="469.0" prefHeight="26.0" prefWidth="604.0" promptText="Abcd54321" style="-fx-background-color: lightblue;">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="signupgobackbutton" layoutX="54.0" layoutY="48.0" mnemonicParsing="false" onAction="#signupgobackbuttonpressed" style="-fx-background-color: orange;" text="Go Back">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Text fx:id="alerttext" fill="#c72c10" layoutX="313.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" text="te" textAlignment="CENTER" visible="false" wrappingWidth="234.93667602539062">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
